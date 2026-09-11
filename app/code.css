@@ -1,0 +1,271 @@
+.code-studio {
+  padding: 26px;
+}
+.code-heading {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 22px;
+}
+.code-heading h2 {
+  font-size: 25px;
+  margin: 7px 0;
+}
+.code-heading p {
+  font-size: 12px;
+  color: #6d8177;
+  line-height: 1.7;
+}
+.code-heading > div:last-child {
+  display: flex;
+  gap: 7px;
+}
+.code-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin: 16px 0;
+}
+.code-toolbar select,
+.ollama-connection select {
+  border: 1px solid #d1ddd3;
+  border-radius: 6px;
+  padding: 8px;
+  background: white;
+  font-size: 12px;
+  max-width: 100%;
+}
+.code-toolbar small {
+  font-size: 10px;
+  color: #6b7d72;
+}
+.code-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 240px;
+  gap: 16px;
+}
+.source-editor {
+  border: 1px solid #cbd9d1;
+  border-radius: 9px;
+  overflow: hidden;
+  background: #172b28;
+}
+.source-editor > div {
+  display: flex;
+  justify-content: space-between;
+  background: #213b34;
+  padding: 11px 15px;
+  color: #b4d1be;
+  font-size: 10px;
+}
+.source-editor textarea {
+  display: block;
+  width: 100%;
+  min-height: 420px;
+  padding: 20px;
+  color: #d8e9d5;
+  background: #172b28;
+  border: 0;
+  outline-offset: -3px;
+  font:
+    13px/1.8 Consolas,
+    monospace;
+  resize: vertical;
+  tab-size: 2;
+}
+.runtime-inspector {
+  padding: 16px;
+  border: 1px solid #dce5db;
+  border-radius: 8px;
+  background: #f4f8f1;
+  overflow: auto;
+  max-height: 490px;
+}
+.runtime-inspector > strong {
+  display: block;
+  font-size: 12px;
+  margin: 8px 0 14px;
+}
+.runtime-inspector > small {
+  display: block;
+  font-size: 10px;
+  line-height: 1.6;
+  color: #73826c;
+}
+.runtime-inspector > div {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 9px 0;
+  border-bottom: 1px solid #dde6d7;
+  font-size: 11px;
+  overflow-wrap: anywhere;
+}
+.runtime-inspector > p {
+  font-size: 11px;
+  color: #758574;
+}
+.serial-monitor {
+  border: 1px solid #d2ded4;
+  border-radius: 8px;
+  margin-top: 17px;
+  overflow: hidden;
+}
+.serial-monitor > div {
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  background: #f0f5ed;
+  font-size: 11px;
+  color: #58715e;
+}
+.serial-monitor pre {
+  height: 165px;
+  margin: 0;
+  overflow: auto;
+  padding: 15px;
+  background: #fbfcf8;
+  font:
+    12px/1.75 Consolas,
+    monospace;
+  white-space: pre-wrap;
+}
+.code-error {
+  background: #fff0ed;
+  color: #9c3d2e;
+  padding: 13px;
+  border-radius: 7px;
+  font-size: 12px;
+}
+.code-message {
+  background: #eaf5e6;
+  color: #436139;
+  padding: 13px;
+  border-radius: 7px;
+  font-size: 12px;
+}
+.code-reference {
+  font-size: 12px;
+  line-height: 1.8;
+  margin: 20px 0;
+  color: #65795f;
+}
+.code-reference summary {
+  font-weight: 600;
+  cursor: pointer;
+  color: #2c654d;
+}
+.code-reference td {
+  padding: 9px;
+  border-bottom: 1px solid #dce5d6;
+  vertical-align: top;
+}
+.code-reference code {
+  font-size: 11px;
+}
+.firmware-source {
+  white-space: pre-wrap;
+  overflow: auto;
+  padding: 20px;
+  background: #18332a;
+  color: #dcebd7;
+  border-radius: 8px;
+  font:
+    12px/1.75 Consolas,
+    monospace;
+}
+.ollama-chat {
+  width: 490px;
+}
+.ollama-connection {
+  padding: 12px 15px;
+  background: #f1f5ed;
+  border-bottom: 1px solid #dfe7d8;
+  max-height: 260px;
+  overflow: auto;
+}
+.ollama-connection > div {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+.ollama-connection > select {
+  width: 100%;
+  margin-top: 10px;
+}
+.ollama-connection p,
+.ollama-connection details {
+  font-size: 10px;
+  line-height: 1.65;
+  color: #61765c;
+  margin: 8px 0;
+}
+.ollama-connection summary {
+  cursor: pointer;
+  font-weight: 600;
+}
+.ollama-connection > label {
+  display: flex;
+  gap: 9px;
+  align-items: center;
+  font-size: 11px;
+  margin-top: 10px;
+}
+.chat-handoff {
+  padding: 6px 15px;
+  border-top: 1px solid #e4e9df;
+  font-size: 10px;
+  line-height: 1.6;
+  max-height: 220px;
+  overflow: auto;
+}
+.chat-handoff textarea {
+  display: block;
+  width: 100%;
+  min-height: 80px;
+  border: 1px solid #ccd9c7;
+  border-radius: 5px;
+  margin: 10px 0;
+  padding: 9px;
+  font: 11px/1.5 monospace;
+}
+.chat-plan pre {
+  white-space: pre-wrap;
+  max-height: 240px;
+  overflow: auto;
+}
+.chat-plan details {
+  font-size: 10px;
+}
+.chat-plan summary {
+  cursor: pointer;
+}
+@media (max-width: 1000px) {
+  .code-layout {
+    grid-template-columns: 1fr;
+  }
+  .runtime-inspector {
+    max-height: 230px;
+  }
+  .code-heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+@media (max-width: 760px) {
+  .code-studio {
+    padding: 15px;
+  }
+  .ollama-chat {
+    width: auto;
+  }
+  .code-reference table {
+    display: block;
+    overflow: auto;
+  }
+  .code-heading > div:last-child {
+    flex-wrap: wrap;
+  }
+}
